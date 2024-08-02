@@ -8,6 +8,16 @@ app.get('/', (req, res)=>{
     res.send('Hola soy la raiz.')
 });
 
+app.post('/clientes/crear', (req, res)=>{
+    const id = req.query.id;
+
+    res.send(`Se creó el cliente ${id}`);
+});
+
+app.get('/clientes/creacion', (req, res)=>{
+    res.send(`Creando un cliente`);
+});
+
 app.get('/clientes/consultar', (req, res)=>{
     res.send(`Todos los Clientes`);
 });
