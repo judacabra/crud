@@ -1,16 +1,12 @@
 <template>
-    <FormCrud/>
+    <div id="app"></div>
+    <router-view></router-view>
 </template>
 
 <script>
-import FormCrud from './components/FormCrud.vue'
-
-export default {
-    name: 'App',
-    components: {
-        FormCrud,
+    export default {
+        name: 'App',
     }
-}
 </script>
 
 <style>
@@ -20,6 +16,6 @@ export default {
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
-        margin-top: 60px;
+        margin-top: 30px;
     }
 </style>
